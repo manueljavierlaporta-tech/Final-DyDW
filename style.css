@@ -1,0 +1,397 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h4 {
+    font-size: 20px;
+    color: #ea9643;
+    margin-bottom: 10px;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    margin-bottom: 50vw;
+    color: white;
+}
+
+header a {
+    color: white;
+}
+
+header nav, header section {
+    z-index: 2;
+}
+
+header nav {
+    padding-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header nav > img {
+    max-width: 150px;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header nav ul li {
+    padding: 5px 10px;
+}
+
+header nav ul li a img {
+    max-width: 20px;
+}
+
+header nav ul ul li a {
+    padding: 2px;
+    background-color: #ea9643;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .banner-cta {
+    position: absolute;
+    top: 400px;
+    left: 50vw;
+    transform: translateX(-50%) translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#banner-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    z-index: -1;
+}
+
+.banner-cta button {
+    background-color: #ea9643;
+    color: white;
+    font-weight: bold;
+    padding: 7px 20px;
+    border: none;
+    border-radius: 3px;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-video {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+
+.section-video .contenido-texto {
+    width: 30%;
+}
+
+.section-video .contenido-texto h4 {
+    font-size: 20px;
+    color: #ea9643;
+}
+
+.section-video .contenido-texto p {
+    font-size: 18px;
+}
+
+.section-video .contenido-video {
+    width: 49%;
+}
+
+.section-video .contenido-video video {
+    max-width: 700px;
+}
+
+.section-donar {
+    margin: 20px 0;
+    position: relative;
+    width: 100%;
+    height: 550px;
+    overflow: hidden;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    padding-right: 50px;
+
+    z-index: 1;
+}
+
+.section-donar #donar-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    z-index: -1;
+}
+
+.section-donar article {
+    background-color: #162257;
+    width: 35%;
+    min-width: 400px;
+    border-radius: 5px;
+    padding: 30px;
+}
+
+.section-donar article .texto {
+    background-color: #30306c;
+    color: #94a5ea;
+    padding: 10px;
+}
+
+.section-donar article button {
+    background-color: #ea9643;
+    color: white;
+    font-weight: bold;
+    padding: 7px 20px;
+    border: none;
+    border-radius: 3px;
+}
+
+.section-donar article .tiempo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.section-donar article .tiempo p:nth-of-type(1) {
+    width: 45%;
+    border-radius: 5px;
+    border: 1px solid #ea9643;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    color: #ea9643;
+    font-weight: bold;
+}
+
+.section-donar article .tiempo p:nth-of-type(2) {
+    width: 45%;
+    border-radius: 5px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    color: white;
+    background-color: #ea9643;
+    font-weight: bold;
+}
+
+.section-donar article .dinero {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.section-donar article .dinero p {
+    width: 20%;
+    border-radius: 5px;
+    border: 1px solid #ea9643;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    color: #ea9643;
+    font-weight: bold;
+    margin: 10px 10px 10px 0;
+}
+
+.section-donar article .dinero p:nth-of-type(1) {
+    border-radius: 5px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    color: white;
+    background-color: #ea9643;
+    font-weight: bold;
+}
+
+.section-donar article .dinero p:nth-of-type(5) {
+    font-size: 14px;
+}
+
+.section-donar article .bases {
+    margin: 10px 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+}
+
+.section-donar article .bases input {
+    margin-top: 3px;
+    margin-right: 7px;
+}
+
+.section-donar article .circulos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-donar article .circulos .circulo {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid #ea9643;
+    margin: 0 10px;
+}
+
+.section-donar article .circulos .circulo-activo {
+    border: none;
+    background-color: #ea9643;
+}
+
+.section-mision {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.section-mision article {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-mision {
+    font-size: 18px;
+}
+
+.section-mision .mision .mision-texto {
+    margin-bottom: 25px;
+}
+
+.section-mision .mision .mision-texto > *{
+    margin-bottom: 10px;
+}
+
+.section-mision .mision .mision-texto h2 {
+    font-size: 30px;
+}
+
+.section-mision .contacto {
+    margin-left: 30px;
+}
+
+.section-mision .contacto form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.section-mision .contacto form input, .section-mision .contacto form textarea {
+    width: 100%;
+    padding: 10px;
+}
+
+.section-mision .contacto form textarea {
+    min-height: 100px;
+}
+
+.section-mision .contacto form span {
+    color: #ea9643;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.section-mision .contacto form button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: #ea9643;
+    color: white;
+    font-weight: bold;
+    padding: 12px 0;
+    border-radius: 3px;
+}
+
+.section-redes {
+    margin: 20px 0;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.section-redes ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-redes ul li a {
+    padding: 2px;
+    background-color: #ea9643;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.section-redes img {
+    max-width: 50px;
+}
+
+footer {
+    width: 100%;
+    background-color: #162257;
+    color: white;
+}
+
+footer a {
+    color: white;
+}
+
+@media (max-width: 768px) {
+    
+}
